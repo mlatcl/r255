@@ -44,10 +44,10 @@ youtube:
 collections:
   updates:
     output: true
-  sessions:
-    permalink: /lectures/:title:output_ext
+  topics:
+    permalink: /topics/:title:output_ext
     output: true
-    sort_by: week
+    sort_by: topic
   lectures:
     permalink: /lectures/:title:output_ext
     output: true
