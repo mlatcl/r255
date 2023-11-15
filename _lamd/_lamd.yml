@@ -1,22 +1,42 @@
 author:
-- given: Neil D.
-  family: Lawrence
-  institution: University of Cambridge
+- family: Lawrence
+  given: Neil D.
   gscholar: r3SJcvoAAAAJ
+  institute: University of Cambridge
   twitter: lawrennd
   orcid: 0000-0001-9258-1030
   url: http://inverseprobability.com
 layout: lecture
+room:
 venue: GN06, William Gates Building
-postsdir: ../../../mlatcl/r255/_topics/
-slidesdir: ../../../mlatcl/r255/slides/
-notesdir: ../../../mlatcl/r255/_notes/
-notebooksdir: ../../../mlatcl/r255/_notebooks/
+talkcss: https://inverseprobability.com/assets/css/talks.css
+bibdir: $HOME/lawrennd/bibliography
+postsdir: ../_lectures/
+slidesdir: ../slides/
+notesdir: ../_notes/
+notebooksdir: ../_notebooks/
+practicalsdir: ../_practicals/
+snippetsdir: $HOME/lawrennd/snippets
 writediagramsdir: .
+scriptsdir: ./scripts/
 diagramsdir: ./slides/diagrams/
+posts: True
+docx: False
+notespdf: False
+slidesipynb: False
+pptx: True
+pdf: False
+assignment: False
+ipynb: True
+reveal: True
+transition: None
+potx: custom-reference.potx 
+dotx: custom-reference.dotx
+baseurl: "r255/" # the subpath of your site, e.g. /blog/
+url: "https://mlatcl.github.io/" # the base hostname & protocol for your site
 transition: None
 ghub:
-- organization: lawrennd
-  repository: talks
+- organization: mlatcl
+  repository: r255
   branch: gh-pages
-  directory: _r255
+  directory: _lamd
