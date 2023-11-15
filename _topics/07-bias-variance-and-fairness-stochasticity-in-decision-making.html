@@ -7,11 +7,11 @@ blog: 2015-12-04-what-kind-of-ai.md
 date: 2023-01-20
 published: 2023-01-20
 time: "12:30"
+topic: 7
 week: 0
 featured_image: slides/diagrams/ml/bias-variance008.png
 reveal: 07-bias-variance-and-fairness-stochasticity-in-decision-making.slides.html
 transition: None
-ipynb: null
 youtube: "lLvzTJtYeU8"
 layout: topic
 categories:
@@ -29,35 +29,69 @@ categories:
 
 -->
 <h2 id="overview">Overview</h2>
-<p>In this topic we will explore the relationship between the bias-variance dilemma and real world decisions. The opening session will set the context, then we will read the following four papers.</p>
+<p>In this topic we will explore the relationship between the
+bias-variance dilemma and real world decisions. The opening session will
+set the context, then we will read the following four papers.</p>
 <ol type="1">
-<li><a href="https://www.dam.brown.edu/people/documents/bias-variance.pdf">Neural Networks and the Bias/Variance Dilemma</a> by Stuart Geman, Elie Bienenstock, and René Doursat (the technical material of importance is in Section 3).</li>
-<li><a href="https://www.votingmatters.org.uk/ISSUE26/I26P3.pdf">Probabilistic electrol methods, representative proability and Maximum Entropy</a> by Roger Sewell, David MacKay and Ian McLean</li>
-<li><a href="https://library.oapen.org/bitstream/handle/20.500.12657/58884/9781509920433.pdf">Habitual Ethics? Chapter 7</a> by Sylvie Delacroix</li>
-<li><a href="https://learning.hccs.edu/faculty/david.poston/phil1301.80361/readings-for-march-31/JJ%20Thomson%20-%20Killing-%20Letting%20Die-%20and%20the%20Trolley%20Problem.pdf">Killing, Letting Die and the Trolley Problem</a> by Judith Jarvis Thomson</li>
+<li><a
+href="https://www.dam.brown.edu/people/documents/bias-variance.pdf">Neural
+Networks and the Bias/Variance Dilemma</a> by Stuart Geman, Elie
+Bienenstock, and René Doursat (the technical material of importance is
+in Section 3).</li>
+<li><a
+href="https://www.votingmatters.org.uk/ISSUE26/I26P3.pdf">Probabilistic
+electrol methods, representative proability and Maximum Entropy</a> by
+Roger Sewell, David MacKay and Ian McLean</li>
+<li><a
+href="https://library.oapen.org/bitstream/handle/20.500.12657/58884/9781509920433.pdf">Habitual
+Ethics? Chapter 7</a> by Sylvie Delacroix</li>
+<li><a
+href="https://learning.hccs.edu/faculty/david.poston/phil1301.80361/readings-for-march-31/JJ%20Thomson%20-%20Killing-%20Letting%20Die-%20and%20the%20Trolley%20Problem.pdf">Killing,
+Letting Die and the Trolley Problem</a> by Judith Jarvis Thomson</li>
 </ol>
-<p>The presentation for each paper will be in the form of an 800 word summary that captures the main message of the work and sets it against the context of the wider discussion we will set up in this first session.</p>
-<h2 id="justice-whats-the-right-thing-to-do">Justice: What’s The Right Thing to Do?</h2>
+<p>The presentation for each paper will be in the form of an 800 word
+summary that captures the main message of the work and sets it against
+the context of the wider discussion we will set up in this first
+session.</p>
+<h2 id="justice-whats-the-right-thing-to-do">Justice: What’s The Right
+Thing to Do?</h2>
 <div style="text-align:right">
-<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/justice-sandel.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/justice-sandel.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/justice-sandel.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/justice-sandel.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
 </div>
 <div class="figure">
-<div id="justice-whats-the-right-thing-to-do-figure" class="figure-frame">
+<div id="justice-whats-the-right-thing-to-do-figure"
+class="figure-frame">
 <div class="centered centered" style="">
 <img class="" src="https://inverseprobability.com/talks/./slides/diagrams//philosophy/justice-whats-the-right-thing-to-do.jpg" width="40%" height="auto" align="center" style="background:none; border:none; box-shadow:none; display:block; margin-left:auto; margin-right:auto;vertical-align:middle">
 </div>
 </div>
-<div id="justice-whats-the-right-thing-to-do-magnify" class="magnify" onclick="magnifyFigure(&#39;justice-whats-the-right-thing-to-do&#39;)">
+<div id="justice-whats-the-right-thing-to-do-magnify" class="magnify"
+onclick="magnifyFigure(&#39;justice-whats-the-right-thing-to-do&#39;)">
 <img class="img-button" src="{{ '/assets/images/Magnify_Large.svg' | relative_url }}" style="width:1.5ex">
 </div>
-<div id="justice-whats-the-right-thing-to-do-caption" class="caption-frame">
-<p>Figure: Sandel’s book looks at how to do the right thing with a context of moreal philosophy. <span class="citation" data-cites="Sandel-justice10">Sandel (2010)</span></p>
+<div id="justice-whats-the-right-thing-to-do-caption"
+class="caption-frame">
+<p>Figure: Sandel’s book looks at how to do the right thing with a
+context of moreal philosophy. <span class="citation"
+data-cites="Sandel-justice10">Sandel (2010)</span></p>
 </div>
 </div>
-<p>In the book “Justice: What’s The Right Thing to Do?” <span class="citation" data-cites="Sandel-justice10">(Sandel, 2010)</span> Michael Sandel aims to help us answer questions about how to do the right thing by giving some context and background in moral philosophy. Sandel is a philosopher based at Harvard University who is reknowned for his popular treatments of the subject. He starts by illustrating decision making through the <a href="https://en.wikipedia.org/wiki/Trolley_problem">‘trolley’ problem</a>.</p>
+<p>In the book “Justice: What’s The Right Thing to Do?” <span
+class="citation" data-cites="Sandel-justice10">(Sandel, 2010)</span>
+Michael Sandel aims to help us answer questions about how to do the
+right thing by giving some context and background in moral philosophy.
+Sandel is a philosopher based at Harvard University who is reknowned for
+his popular treatments of the subject. He starts by illustrating
+decision making through the <a
+href="https://en.wikipedia.org/wiki/Trolley_problem">‘trolley’
+problem</a>.</p>
 <h2 id="the-trolley-problem">The Trolley Problem</h2>
 <div style="text-align:right">
-<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/trolley-switch.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/trolley-switch.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/trolley-switch.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/trolley-switch.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
 </div>
 <div class="figure">
 <div id="trolley-problem-original-figure" class="figure-frame">
@@ -65,65 +99,137 @@ categories:
 <img class="negate" src="https://inverseprobability.com/talks/./slides/diagrams//ai/Trolley_1.jpg" width="80%" height="auto" align="center" style="background:none; border:none; box-shadow:none; display:block; margin-left:auto; margin-right:auto;vertical-align:middle">
 </div>
 </div>
-<div id="trolley-problem-original-magnify" class="magnify" onclick="magnifyFigure(&#39;trolley-problem-original&#39;)">
+<div id="trolley-problem-original-magnify" class="magnify"
+onclick="magnifyFigure(&#39;trolley-problem-original&#39;)">
 <img class="img-button" src="{{ '/assets/images/Magnify_Large.svg' | relative_url }}" style="width:1.5ex">
 </div>
 <div id="trolley-problem-original-caption" class="caption-frame">
 <p>Figure: The trolley problem in its original form.</p>
 </div>
 </div>
-<p>The trolley problem has become a mainstay of debates around driverless cards and is often rather crudely used, but it is more subtly wielded in is introduction by <span class="citation" data-cites="Foot-problem67">Foot (1967)</span> where it is used as part of her analysis of the doctrine of double effect where actions have results that are not intended (oblique intention).</p>
-<p>In the world of science, utilitarianism as a philosophy maps onto what we think of as utility theory. The assumption is that the quality of any decision can be evaluated mathematically.</p>
-<p>This gives us an approach to balancing between the sensitivity and the specificity of any decision. The basic approach is to define a utility function, which defines the worth of different outcomes.</p>
-<p>In machine learning this utility function maps onto what we think of as the objective function (also known as the loss, the cost function or the error function).</p>
-<h2 id="artificial-vs-natural-systems">Artificial vs Natural Systems</h2>
+<p>The trolley problem has become a mainstay of debates around
+driverless cards and is often rather crudely used, but it is more subtly
+wielded in is introduction by <span class="citation"
+data-cites="Foot-problem67">Foot (1967)</span> where it is used as part
+of her analysis of the doctrine of double effect where actions have
+results that are not intended (oblique intention).</p>
+<p>In the world of science, utilitarianism as a philosophy maps onto
+what we think of as utility theory. The assumption is that the quality
+of any decision can be evaluated mathematically.</p>
+<p>This gives us an approach to balancing between the sensitivity and
+the specificity of any decision. The basic approach is to define a
+utility function, which defines the worth of different outcomes.</p>
+<p>In machine learning this utility function maps onto what we think of
+as the objective function (also known as the loss, the cost function or
+the error function).</p>
+<h2 id="artificial-vs-natural-systems">Artificial vs Natural
+Systems</h2>
 <div style="text-align:right">
-<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_ai/includes/artificial-vs-natural-systems-short.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_ai/includes/artificial-vs-natural-systems-short.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_ai/includes/artificial-vs-natural-systems-short.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_ai/includes/artificial-vs-natural-systems-short.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
 </div>
-<p>Let’s take a step back from artificial intelligence, and consider natural intelligence. Or even more generally, let’s consider the contrast between an artificial <em>system</em> and an natural system. The key difference between the two is that artificial systems are <em>designed</em> whereas natural systems are <em>evolved</em>.</p>
-<p>Systems design is a major component of all Engineering disciplines. The details differ, but there is a single common theme: achieve your objective with the minimal use of resources to do the job. That provides efficiency. The engineering designer imagines a solution that requires the minimal set of components to achieve the result. A water pump has one route through the pump. That minimises the number of components needed. Redundancy is introduced only in safety critical systems, such as aircraft control systems. Students of biology, however, will be aware that in nature system-redundancy is everywhere. Redundancy leads to robustness. For an organism to survive in an evolving environment it must first be robust, then it can consider how to be efficient. Indeed, organisms that evolve to be too efficient at a particular task, like those that occupy a niche environment, are particularly vulnerable to extinction.</p>
-<p>This notion is akin to the idea that only the best will survive, popularly encoded into an notion of evolution by Herbert Spencer’s quote.</p>
+<p>Let’s take a step back from artificial intelligence, and consider
+natural intelligence. Or even more generally, let’s consider the
+contrast between an artificial <em>system</em> and an natural system.
+The key difference between the two is that artificial systems are
+<em>designed</em> whereas natural systems are <em>evolved</em>.</p>
+<p>Systems design is a major component of all Engineering disciplines.
+The details differ, but there is a single common theme: achieve your
+objective with the minimal use of resources to do the job. That provides
+efficiency. The engineering designer imagines a solution that requires
+the minimal set of components to achieve the result. A water pump has
+one route through the pump. That minimises the number of components
+needed. Redundancy is introduced only in safety critical systems, such
+as aircraft control systems. Students of biology, however, will be aware
+that in nature system-redundancy is everywhere. Redundancy leads to
+robustness. For an organism to survive in an evolving environment it
+must first be robust, then it can consider how to be efficient. Indeed,
+organisms that evolve to be too efficient at a particular task, like
+those that occupy a niche environment, are particularly vulnerable to
+extinction.</p>
+<p>This notion is akin to the idea that only the best will survive,
+popularly encoded into an notion of evolution by Herbert Spencer’s
+quote.</p>
 <blockquote>
 <p>Survival of the fittest</p>
-<p><a href="https://en.wikipedia.org/wiki/Herbert_Spencer">Herbet Spencer</a>, 1864</p>
+<p><a href="https://en.wikipedia.org/wiki/Herbert_Spencer">Herbet
+Spencer</a>, 1864</p>
 </blockquote>
-<p>Darwin himself never said “Survival of the Fittest” he talked about evolution by natural selection.</p>
+<p>Darwin himself never said “Survival of the Fittest” he talked about
+evolution by natural selection.</p>
 <blockquote>
 <p>Non-survival of the non-fit</p>
 </blockquote>
-<p>Evolution is better described as “non-survival of the non-fit.” You don’t have to be the fittest to survive, you just need to avoid the pitfalls of life. This is the first priority.</p>
-<p>So it is with natural vs artificial intelligences. Any natural intelligence that was not robust to changes in its external environment would not survive, and therefore not reproduce. In contrast the artificial intelligences we produce are designed to be efficient at one specific task: control, computation, playing chess. They are <em>fragile</em>.</p>
-<p>The first rule of a natural system is not be intelligent, it is “don’t be stupid.”</p>
-<p>A mistake we make in the design of our systems is to equate fitness with the objective function, and to assume it is known and static. In practice, a real environment would have an evolving fitness function which would be unknown at any given time.</p>
-<p>You can also read this blog post on <a href="http://inverseprobability.com/2018/02/06/natural-and-artificial-intelligence">Natural and Artificial Intelligence</a>..</p>
-<p>The first criterion of a natural intelligence is <em>don’t fail</em>, not because it has a will or intent of its own, but because if it had failed it wouldn’t have stood the test of time. It would no longer exist. In contrast, the mantra for artificial systems is to be more efficient. Our artificial systems are often given a single objective (in machine learning it is encoded in a mathematical function) and they aim to achieve that objective efficiently. These are different characteristics. Even if we wanted to incorporate <em>don’t fail</em> in some form, it is difficult to design for. To design for “don’t fail,” you have to consider every which way in which things can go wrong, if you miss one you fail. These cases are sometimes called corner cases. But in a real, uncontrolled environment, almost everything is a corner. It is difficult to imagine everything that can happen. This is why most of our automated systems operate in controlled environments, for example in a factory, or on a set of rails. Deploying automated systems in an uncontrolled environment requires a different approach to systems design. One that accounts for uncertainty in the environment and is robust to unforeseen circumstances.</p>
-<h2 id="uncertainty-and-absolutism">Uncertainty and Absolutism</h2>
-<p>One of the most understood aspects of evolution is the idea that evolution is survival of the fittest. It’s better described of non-survival of the non-fit, and what fit even means is highly subjective. Any utility function evolves socially andwith our environment. <a href="https://en.wikipedia.org/wiki/Survival_of_the_fittest">“Survival of the fittest”</a> is not due to Darwin it’s associated with <a href="https://en.wikipedia.org/wiki/Herbert_Spencer">Herbert Spencer</a> and closely associated with social Darwinism which has little to do with the way that evolution operates in practice.</p>
+<p>Evolution is better described as “non-survival of the non-fit”. You
+don’t have to be the fittest to survive, you just need to avoid the
+pitfalls of life. This is the first priority.</p>
+<p>So it is with natural vs artificial intelligences. Any natural
+intelligence that was not robust to changes in its external environment
+would not survive, and therefore not reproduce. In contrast the
+artificial intelligences we produce are designed to be efficient at one
+specific task: control, computation, playing chess. They are
+<em>fragile</em>.</p>
+<p>The first rule of a natural system is not be intelligent, it is
+“don’t be stupid”.</p>
+<p>A mistake we make in the design of our systems is to equate fitness
+with the objective function, and to assume it is known and static. In
+practice, a real environment would have an evolving fitness function
+which would be unknown at any given time.</p>
+<p>You can also read this blog post on <a
+href="http://inverseprobability.com/2018/02/06/natural-and-artificial-intelligence">Natural
+and Artificial Intelligence</a>..</p>
+<p>The first criterion of a natural intelligence is <em>don’t fail</em>,
+not because it has a will or intent of its own, but because if it had
+failed it wouldn’t have stood the test of time. It would no longer
+exist. In contrast, the mantra for artificial systems is to be more
+efficient. Our artificial systems are often given a single objective (in
+machine learning it is encoded in a mathematical function) and they aim
+to achieve that objective efficiently. These are different
+characteristics. Even if we wanted to incorporate <em>don’t fail</em> in
+some form, it is difficult to design for. To design for “don’t fail”,
+you have to consider every which way in which things can go wrong, if
+you miss one you fail. These cases are sometimes called corner cases.
+But in a real, uncontrolled environment, almost everything is a corner.
+It is difficult to imagine everything that can happen. This is why most
+of our automated systems operate in controlled environments, for example
+in a factory, or on a set of rails. Deploying automated systems in an
+uncontrolled environment requires a different approach to systems
+design. One that accounts for uncertainty in the environment and is
+robust to unforeseen circumstances.</p>
+<p>One of the most understood aspects of evolution is the idea that
+evolution is survival of the fittest. It’s better described of
+non-survival of the non-fit, and what fit even means is highly
+subjective. Any utility function evolves socially andwith our
+environment. <a
+href="https://en.wikipedia.org/wiki/Survival_of_the_fittest">“Survival
+of the fittest”</a>is not due to Darwin it’s associated with <a
+href="https://en.wikipedia.org/wiki/Herbert_Spencer">Herbert Spencer</a>
+and closely associated with social Darwinism which has little to do with
+the way that evolution operates in practice.</p>
 <h2 id="absolute-policies">Absolute Policies</h2>
 <p>Because of these uncertainties there’s an emergent rule:</p>
 <blockquote>
-<p>There will be no single absolute policy that should be followed slavishly in all circumstances</p>
+<p>There will be no single absolute policy that should be followed
+slavishly in all circumstances</p>
 </blockquote>
-<p>This is also acknowledged in the field of statistics, most famously in the quote by George Box.</p>
-<h2 id="some-models-are-useful">Some Models are Useful</h2>
-<div style="text-align:right">
-<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/george-box-useful-model.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/george-box-useful-model.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
-</div>
-<p>So, when do we fall outside this important domain where we have the correct model? According to <span class="citation" data-cites="Box-science76">Box (1976)</span>, all the time.</p>
+<h2 id="george-box">George Box</h2>
 <blockquote>
-<p>All models are wrong, but some are useful</p>
-</blockquote>
-<p>Box’s important quote has become worn by overuse (like a favorite sweater). Indeed, I most often see it quoted at the beginning of a talk in a way that confuses correlation with causality. Presentations proceed in the following way. (1) Here is my model. (2) It is wrong. (3) Here is George Box’s quote. (4) My model is wrong, but it might be useful. Sometimes I feel at stage (4) a confusion about the arrow of causality occurs, it feels to me that people are almost saying “<em>Because</em> my model is wrong it <em>might</em> be useful.”</p>
-<p>Perhaps we should be more focusing on the quote from the same paper<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
-<blockquote>
-<p>Since all models are wrong the scientist must be alert to what is importantly wrong. It is inappropriate to be concerned about mice when there are tigers abroad.</p>
-<p>George E. P. Box <span class="citation" data-cites="Box-science76">(Box, 1976)</span></p>
+<p>Since all models are wrong the scientist must be alert to what is
+importantly wrong. It is inappropriate to be concerned about mice when
+there are tigers abroad.</p>
+<p>George E. P. Box <span class="citation"
+data-cites="Box-science76">(Box, 1976)</span></p>
 </blockquote>
 <h2 id="tigers-and-trolleys">Tigers and Trolleys</h2>
-<p>In the world of trolley problems this perhaps maps best to the version of the problem where to save the lives of five people you have to push a large gentleman off a bridge.</p>
+<p>In the world of trolley problems this perhaps maps best to the
+version of the problem where to save the lives of five people you have
+to push a large gentleman off a bridge.</p>
 <h2 id="the-push-and-the-trolley">The Push and the Trolley</h2>
 <div style="text-align:right">
-<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/trolley-push.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/trolley-push.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/trolley-push.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/trolley-push.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
 </div>
 <div class="figure">
 <div id="trolley-problem-2-figure" class="figure-frame">
@@ -131,52 +237,131 @@ categories:
 <img class="negate" src="https://inverseprobability.com/talks/./slides/diagrams//ai/trolley2.jpg" width="80%" height="auto" align="center" style="background:none; border:none; box-shadow:none; display:block; margin-left:auto; margin-right:auto;vertical-align:middle">
 </div>
 </div>
-<div id="trolley-problem-2-magnify" class="magnify" onclick="magnifyFigure(&#39;trolley-problem-2&#39;)">
+<div id="trolley-problem-2-magnify" class="magnify"
+onclick="magnifyFigure(&#39;trolley-problem-2&#39;)">
 <img class="img-button" src="{{ '/assets/images/Magnify_Large.svg' | relative_url }}" style="width:1.5ex">
 </div>
 <div id="trolley-problem-2-caption" class="caption-frame">
-<p>Figure: In the situation where you push an overweight gentleman, the decision is riddled with uncertainty. Doubt inevitably creeps in.</p>
+<p>Figure: In the situation where you push an overweight gentleman, the
+decision is riddled with uncertainty. Doubt inevitably creeps in.</p>
 </div>
 </div>
-<p>In <span class="citation" data-cites="Thomson-killing76">Thomson (1976)</span> a variation on Foot’s original formulation is considered which is allowing us to see the challenge from a transplant surgeon’s perspective: Thomson knowingly contrives a variation of the problem which is similar to the idea that a transplant surgeon should harvest organs to save the lives of five people.</p>
-<h2 id="uncertainty-the-tyger-that-burns-bright">Uncertainty: The Tyger that Burns Bright</h2>
+<p>In <span class="citation" data-cites="Thomson-killing76">Thomson
+(1976)</span> a variation on Foot’s original formulation is considered
+which is allowing us to see the challenge from a transplant surgeon’s
+perspective: Thomson contrives a variation of the problem which is
+similar to the idea that a transplant surgeon should harvest organs to
+save the lives of five people.</p>
+<h2 id="uncertainty-the-tyger-that-burns-bright">Uncertainty: The Tyger
+that Burns Bright</h2>
 <blockquote>
-<p>Tyter Tyger, burning bright, In the forests of the night; What immortal hand or eye, Could frame thy fearful symmetry?</p>
+<p>Tyter Tyger, burning bright, In the forests of the night; What
+immortal hand or eye, Could frame thy fearful symmetry?</p>
 <p>First verse of The Tyger by William Blake, 1794</p>
 </blockquote>
-<p>A major challenge with this notion of utility is the assumption that we can describe our objectives mathematically. Once this notion is challenged some severe weaknesses in the way we do machine learning can be seen to emerge.</p>
+<p>A major challenge with this notion of utility is the assumption that
+we can describe our objectives mathematically. Once this notion is
+challenged some severe weaknesses in the way we do machine learning can
+be seen to emerge.</p>
 <h2 id="what-is-machine-learning">What is Machine Learning?</h2>
 <div style="text-align:right">
-<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_ml/includes/what-is-ml-2.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_ml/includes/what-is-ml-2.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_ml/includes/what-is-ml-2.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_ml/includes/what-is-ml-2.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
 </div>
-<p>Machine learning allows us to extract knowledge from data to form a prediction.</p>
-<p><span class="math display">\[\text{data} + \text{model} \stackrel{\text{compute}}{\rightarrow} \text{prediction}\]</span></p>
-<p>A machine learning prediction is made by combining a model with data to form the prediction. The manner in which this is done gives us the machine learning <em>algorithm</em>.</p>
-<p>Machine learning models are <em>mathematical models</em> which make weak assumptions about data, e.g. smoothness assumptions. By combining these assumptions with the data, we observe we can interpolate between data points or, occasionally, extrapolate into the future.</p>
-<p>Machine learning is a technology which strongly overlaps with the methodology of statistics. From a historical/philosophical view point, machine learning differs from statistics in that the focus in the machine learning community has been primarily on accuracy of prediction, whereas the focus in statistics is typically on the interpretability of a model and/or validating a hypothesis through data collection.</p>
-<p>The rapid increase in the availability of compute and data has led to the increased prominence of machine learning. This prominence is surfacing in two different but overlapping domains: data science and artificial intelligence.</p>
+<p>Machine learning allows us to extract knowledge from data to form a
+prediction.</p>
+<p><span class="math display">\[\text{data} + \text{model}
+\stackrel{\text{compute}}{\rightarrow} \text{prediction}\]</span></p>
+<p>A machine learning prediction is made by combining a model with data
+to form the prediction. The manner in which this is done gives us the
+machine learning <em>algorithm</em>.</p>
+<p>Machine learning models are <em>mathematical models</em> which make
+weak assumptions about data, e.g. smoothness assumptions. By combining
+these assumptions with the data, we observe we can interpolate between
+data points or, occasionally, extrapolate into the future.</p>
+<p>Machine learning is a technology which strongly overlaps with the
+methodology of statistics. From a historical/philosophical view point,
+machine learning differs from statistics in that the focus in the
+machine learning community has been primarily on accuracy of prediction,
+whereas the focus in statistics is typically on the interpretability of
+a model and/or validating a hypothesis through data collection.</p>
+<p>The rapid increase in the availability of compute and data has led to
+the increased prominence of machine learning. This prominence is
+surfacing in two different but overlapping domains: data science and
+artificial intelligence.</p>
 <h2 id="from-model-to-decision">From Model to Decision</h2>
 <div style="text-align:right">
-<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_ml/includes/what-is-ml-end-to-end.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_ml/includes/what-is-ml-end-to-end.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_ml/includes/what-is-ml-end-to-end.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_ml/includes/what-is-ml-end-to-end.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
 </div>
-<p>The real challenge, however, is end-to-end decision making. Taking information from the environment and using it to drive decision making to achieve goals.</p>
+<p>The real challenge, however, is end-to-end decision making. Taking
+information from the environment and using it to drive decision making
+to achieve goals.</p>
 <h2 id="prospect-theory">Prospect Theory</h2>
 <div style="text-align:right">
-<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/bias-towards-variance.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/bias-towards-variance.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/bias-towards-variance.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/bias-towards-variance.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
 </div>
-<p>Daniel Kahneman won the Nobel Memorial Prize for work on the idea of prospect theory. The theory is based on empirical studies around how humans make decisions, and suggests that not only are they sensitive to change of circumstance, rather than absolute circumstance, there is an asymmetry to the sensitivity associated with negative and positive changes.</p>
-<p><span class="citation" data-cites="Kahneman-fastslow11">Kahneman (2011)</span> was a book that presented this idea but also popularised the notion of dual process cognition: where thoughts are separated into fast thinking and slow thinking. In the history of the philosophy of ethics, an ethical decision has always been associated with intentional or <em>reflective</em> actions. Sylvie Delacroix’s book <em>Habitual Ethics</em> <span class="citation" data-cites="Delacroix-habitual22">(Delacroix, 2022)</span> establishes the case for a theory of ethics arising from habitual (presumably fast-thinking) decisions.</p>
+<p>Daniel Kahneman won the Nobel Memorial Prize for work on the idea of
+prospect theory. The theory is based on empirical studies around how
+humans make decisions, and suggests that not only are they sensitive to
+change of circumstance, rather than absolute circumstance, there is an
+asymmetry to the sensitivity associated with negative and positive
+changes.</p>
+<p><span class="citation" data-cites="Kahneman-fastslow11">Kahneman
+(2011)</span> was a book that presented this idea but also popularised
+the notion of dual process cognition: where thoughts are separated into
+fast thinking and slow thinking. In the history of the philosophy of
+ethics, an ethical decision has always been associated with intentional
+or <em>reflective</em> actions. Sylvie Delacroix’s book <em>Habitual
+Ethics</em> <span class="citation"
+data-cites="Delacroix-habitual22">(Delacroix, 2022)</span> establishes
+the case for a theory of ethics arising from habitual (presumably
+fast-thinking) decisions.</p>
 <h2 id="subjective-utility">Subjective Utility</h2>
-<p>Jeremy Bentham’s ideas around maximising happiness are focussed on the ide of a global utility, but natural selection suggests that there should be variation in the population, otherwise there will be no separation between effective and ineffective strategies. So in practice utilities (if they exist) must be subjective, they would vary from individual to individual.</p>
-<h2 id="a-cognitive-bias-towards-variance">A Cognitive Bias towards Variance</h2>
-<p>Kahneman’s book explores various ways in which humans might be considered “irrational,” for example our tendency to produce overcomplicated explanations. If prediction is of the form <span class="math display">\[ \text{model} + \text{data} \rightarrow \text{prediction}\]</span> then Kahneman explores the seemingly reasonable proposal that predictions from different experts should be consistent. After all, how could the predictions be correct if they are inconsistent. From a statistical perspective, simpler models tend to be more consistent. So this suggests to Kahneman that humans overcomplicate. However, once we accept that errors will be made (e.g. due to uncertainty) then we can notice that a push for consistency is a push for consistency of error.</p>
+<p>Jeremy Bentham’s ideas around maximising happiness are focussed on
+the ide of a global utility, but natural selection suggests that there
+should be variation in the population, otherwise there will be no
+separation between effective and ineffective strategies. So in practice
+utilities (if they exist) must be subjective, they would vary from
+individual to individual.</p>
+<h2 id="a-cognitive-bias-towards-variance">A Cognitive Bias towards
+Variance</h2>
+<p>Kahneman’s book explores various ways in which humans might be
+considered “irrational”, for example our tendency to produce
+overcomplicated explanations. If prediction is of the form <span
+class="math display">\[ \text{model} + \text{data} \rightarrow
+\text{prediction}\]</span> then Kahneman explores the seemingly
+reasonable proposal that predictions from different experts should be
+consistent. After all, how could the predictions be correct if they are
+inconsistent. From a statistical perspective, simpler models tend to be
+more consistent. So this suggests to Kahneman that humans
+overcomplicate. However, once we accept that errors will be made
+(e.g. due to uncertainty) then we can notice that a push for consistency
+is a push for consistency of error.</p>
 <h2 id="bias-vs-variance">Bias vs Variance</h2>
 <div style="text-align:right">
-<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/bias-variance-in-ml.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/bias-variance-in-ml.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/bias-variance-in-ml.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/bias-variance-in-ml.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
 </div>
-<p>One way of looking at this technically in machine learning is to decompose our generalization error into two parts. The bias-variance dilemma emerges from looking at these two parts and observing that part of our error comes from oversimplification in our model (the bias error) and part of our error comes from the fact that there’s insufficient data to pin down the parameters of a more complex model (the variance error).</p>
+<p>One way of looking at this technically in machine learning is to
+decompose our generalization error into two parts. The bias-variance
+dilemma emerges from looking at these two parts and observing that part
+of our error comes from oversimplification in our model (the bias error)
+and part of our error comes from the fact that there’s insufficient data
+to pin down the parameters of a more complex model (the variance
+error).</p>
 <h2 id="in-machine-learning">In Machine Learning</h2>
-<p>In the past (before the neural network revolution!) there were two principle approaches to resolving the bias-variance dilemma. Either you use over simple models, which lead to better consistency in their generalization and well determined parameters. Or you use more complex models and make use of some form of averaging to deal with the variance.</p>
+<p>In the past (before the neural network revolution!) there were two
+principle approaches to resolving the bias-variance dilemma. Either you
+use over simple models, which lead to better consistency in their
+generalization and well determined parameters. Or you use more complex
+models and make use of some form of averaging to deal with the
+variance.</p>
 <ul>
 <li>Two approaches
 <ul>
@@ -186,22 +371,30 @@ categories:
 </ul>
 <h2 id="bias-vs-variance-error-plots">Bias vs Variance Error Plots</h2>
 <div style="text-align:right">
-<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_ml/includes/bias-variance-plots.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_ml/includes/bias-variance-plots.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_ml/includes/bias-variance-plots.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_ml/includes/bias-variance-plots.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
 </div>
 <p>Helper function for sampling data from two different classes.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div>
 <p>Helper function for plotting the decision boundary of the SVM.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> urllib.request</span></code></pre></div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>urllib.request.urlretrieve(<span class="st">&#39;https://raw.githubusercontent.com/lawrennd/talks/gh-pages/mlai.py&#39;</span>,<span class="st">&#39;mlai.py&#39;</span>)</span></code></pre></div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib</span>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> urllib.request</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>urllib.request.urlretrieve(<span class="st">&#39;https://raw.githubusercontent.com/lawrennd/talks/gh-pages/mlai.py&#39;</span>,<span class="st">&#39;mlai.py&#39;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>font <span class="op">=</span> {<span class="st">&#39;family&#39;</span> : <span class="st">&#39;sans&#39;</span>,</span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;weight&#39;</span> : <span class="st">&#39;bold&#39;</span>,</span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>        <span class="st">&#39;size&#39;</span>   : <span class="dv">22</span>}</span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>matplotlib.rc(<span class="st">&#39;font&#39;</span>, <span class="op">**</span>font)</span>
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code></pre></div>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn <span class="im">import</span> svm</span></code></pre></div>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create an instance of SVM and fit the data. </span></span>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn <span class="im">import</span> svm</span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create an instance of SVM and fit the data. </span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>C <span class="op">=</span> <span class="fl">100.0</span>  <span class="co"># SVM regularization parameter</span></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>gammas <span class="op">=</span> [<span class="fl">0.001</span>, <span class="fl">0.01</span>, <span class="fl">0.1</span>, <span class="dv">1</span>]</span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -227,7 +420,8 @@ categories:
 <span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>                           titles<span class="op">=</span>titles,</span>
 <span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>                          xlim<span class="op">=</span>xlim,</span>
 <span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>                          ylim<span class="op">=</span>ylim)</span></code></pre></div>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install pods</span></code></pre></div>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install pods</span></code></pre></div>
 <!---->
 <div class="figure">
 <div id="bias-variance-errors-figure" class="figure-frame">
@@ -238,61 +432,155 @@ categories:
 <img class="" src="https://inverseprobability.com/talks/./slides/diagrams//ml/bias-variance010.png" width="80%" height="auto" align="center" style="background:none; border:none; box-shadow:none; display:block; margin-left:auto; margin-right:auto;vertical-align:middle">
 </div>
 </div>
-<div id="bias-variance-errors-magnify" class="magnify" onclick="magnifyFigure(&#39;bias-variance-errors&#39;)">
+<div id="bias-variance-errors-magnify" class="magnify"
+onclick="magnifyFigure(&#39;bias-variance-errors&#39;)">
 <img class="img-button" src="{{ '/assets/images/Magnify_Large.svg' | relative_url }}" style="width:1.5ex">
 </div>
 <div id="bias-variance-errors-caption" class="caption-frame">
-<p>Figure: In each figure the simpler model is on the left, and the more complex model is on the right. Each fit is done to a different version of the data set. The simpler model is more consistent in its errors (bias error), whereas the more complex model is varying in its errors (variance error).</p>
+<p>Figure: In each figure the simpler model is on the left, and the more
+complex model is on the right. Each fit is done to a different version
+of the data set. The simpler model is more consistent in its errors
+(bias error), whereas the more complex model is varying in its errors
+(variance error).</p>
 </div>
 </div>
-<h2 id="decision-making-and-bias-variance">Decision Making and Bias-Variance</h2>
+<h2 id="decision-making-and-bias-variance">Decision Making and
+Bias-Variance</h2>
 <div style="text-align:right">
-<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/bias-variance-in-ml.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/bias-variance-in-ml.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/bias-variance-in-ml.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/bias-variance-in-ml.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
 </div>
-<p>However in a population, where there are many decision makers, I would argue we should always err towards variance error rather than bias. This is because the averaging effects occur naturally, and we don’t have large sections of the population making consistent errors.</p>
-<p>In practice averaging of variance errors is also prosed by Breiman and is called <a href="https://en.wikipedia.org/wiki/Bootstrap_aggregating">bagging</a> <span class="citation" data-cites="Breiman-bagging96">(Breiman, 1996)</span>. (Another ensemble method that works with biased models is called <a href="https://en.wikipedia.org/wiki/Boosting_(machine_learning)">boosting</a>.</p>
+<p>However in a population, where there are many decision makers, I
+would argue we should always err towards variance error rather than
+bias. This is because the averaging effects occur naturally, and we
+don’t have large sections of the population making consistent
+errors.</p>
+<p>In practice averaging of variance errors is also prosed by Breiman
+and is called <a
+href="https://en.wikipedia.org/wiki/Bootstrap_aggregating">bagging</a>
+<span class="citation" data-cites="Breiman-bagging96">(Breiman,
+1996)</span>. (Another ensemble method that works with biased models is
+called <a
+href="https://en.wikipedia.org/wiki/Boosting_(machine_learning)">boosting</a>.</p>
 <h2 id="rational-behaviour">Rational Behaviour</h2>
 <div style="text-align:right">
-<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/bias-variance-rational.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/bias-variance-rational.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/bias-variance-rational.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_philosophy/includes/bias-variance-rational.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
 </div>
-<p>My argument is that rational behviour requires variation. That it allows us to sustain a variety of approaches to life. That there is no single utility that we should all be optimising.</p>
-<p>{So the observations that humans “over complicate” whether it’s in football punditry or as <span class="citation" data-cites="Meehl-clinicalstatistical54">Meehl (1954)</span> observes in clinical prediction, is associated with</p>
+<p>My argument is that rational behviour requires variation. That it
+allows us to sustain a variety of approaches to life. That there is no
+single utility that we should all be optimising.</p>
+<p>{So the observations that humans “over complicate” whether it’s in
+football punditry or as <span class="citation"
+data-cites="Meehl-clinicalstatistical54">Meehl (1954)</span> observes in
+clinical prediction, is associated with</p>
 <h2 id="one-correct-solution">One Correct Solution</h2>
-<p>The idea that there is one solution and that we can somehow have access to it has led to some of the horrors of science. For example, in eugenics, the notion of artificial selection (where some aspect(s) of a species is/are selected and accentuated through artifical breeding) is applied to humans. Disregarding the natural moral repulsion this engenders, it also betrays some simplistic misunderstandings of the process of evolution. What is OK for greyhounds, wheat breeds, race horses, sheep and cows is not OK for humans.</p>
+<p>The idea that there is one solution and that we can somehow have
+access to it has led to some of the horrors of science. For example, in
+eugenics, the notion of artificial selection (where some aspect(s) of a
+species is/are selected and accentuated through artifical breeding) is
+applied to humans. Disregarding the natural moral repulsion this
+engenders, it also betrays some simplistic misunderstandings of the
+process of evolution. What is OK for greyhounds, wheat breeds, race
+horses, sheep and cows is not OK for humans.</p>
 <blockquote>
-<p>I may not agree with many people’s subjective approach to life, I may even believe it to be severely sub-optimal. But I should not presume to know better, even if prior experience shows that my own ‘way of being’ is effective.</p>
-<p>Variation is vitally important for robustness. There may be future circumstances where my approaches fail utterly, and other ways of being are better.</p>
+<p>I may not agree with many people’s subjective approach to life, I may
+even believe it to be severely sub-optimal. But I should not presume to
+know better, even if prior experience shows that my own ‘way of being’
+is effective.</p>
+<p>Variation is vitally important for robustness. There may be future
+circumstances where my approaches fail utterly, and other ways of being
+are better.</p>
 </blockquote>
-<p>If we do all have different approaches to life, then in the long run the quality of these approaches is measured by a effectiveness (which will also owe a lot to luck). From a species persistence perspective, each of these approaches is one component in our make up. The notion of a universl utility by which we are all judged is difficult (or impossible) to define.</p>
+<p>If we do all have different approaches to life, then in the long run
+the quality of these approaches is measured by a effectiveness (which
+will also owe a lot to luck). From a species persistence perspective,
+each of these approaches is one component in our make up. The notion of
+a universl utility by which we are all judged is difficult (or
+impossible) to define.</p>
 <h2 id="the-real-ethical-dilemma">The Real Ethical Dilemma</h2>
-<p>For driverless cars, the trolley problem is an oversimplificiation, because when people are killed it will not be through “reflective decisions” that those deaths occur, but through a consipiracy of happenstance events.</p>
-<p>That does not mean there are no ethical dilemmas, any automation technology will have uneven effects across society. So, for example, it may be that introducing driverless cars we achieve a 90% reduction in deaths. But what if all those that now die are cyclists?</p>
+<p>For driverless cars, the trolley problem is an oversimplificiation,
+because when people are killed it will not be through “reflective
+decisions” that those deaths occur, but through a consipiracy of
+happenstance events.</p>
+<p>That does not mean there are no ethical dilemmas, any automation
+technology will have uneven effects across society. So, for example, it
+may be that introducing driverless cars we achieve a 90% reduction in
+deaths. But what if all those that now die are cyclists?</p>
 <h2 id="fairness-in-decision-making">Fairness in Decision Making</h2>
-<p>As a more general example, let’s consider fairness in decision making. Computers make decisions on the basis of our data, how can we have confidence in those decisions?</p>
+<p>As a more general example, let’s consider fairness in decision
+making. Computers make decisions on the basis of our data, how can we
+have confidence in those decisions?</p>
 <div class="figure">
 <div id="convention-108-coe-figure" class="figure-frame">
 <div class="centered" style="">
 <img class="" src="https://inverseprobability.com/talks/./slides/diagrams//data-science/convention-108-coe.png" width="70%" height="auto" align="center" style="background:none; border:none; box-shadow:none; display:block; margin-left:auto; margin-right:auto;vertical-align:middle">
 </div>
 </div>
-<div id="convention-108-coe-magnify" class="magnify" onclick="magnifyFigure(&#39;convention-108-coe&#39;)">
+<div id="convention-108-coe-magnify" class="magnify"
+onclick="magnifyFigure(&#39;convention-108-coe&#39;)">
 <img class="img-button" src="{{ '/assets/images/Magnify_Large.svg' | relative_url }}" style="width:1.5ex">
 </div>
 <div id="convention-108-coe-caption" class="caption-frame">
-<p>Figure: The convention for the protection of individuals with regard to the processing of personal data was opened for signature on 28th January 1981. It was the first legally binding international instrument in the field of data protection.</p>
+<p>Figure: The convention for the protection of individuals with regard
+to the processing of personal data was opened for signature on 28th
+January 1981. It was the first legally binding international instrument
+in the field of data protection.</p>
 </div>
 </div>
 <h2 id="gdpr-origins">GDPR Origins</h2>
 <div style="text-align:right">
-<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_governance/includes/gdpr-origins.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_governance/includes/gdpr-origins.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_governance/includes/gdpr-origins.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_governance/includes/gdpr-origins.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
 </div>
-<p>There’s been much recent talk about GDPR, much of it implying that the recent incarnation is radically different from previous incarnations. While the most recent iteration began to be developed in 2012, but in reality, its origins are much older. <a href="https://en.wikipedia.org/wiki/Convention_for_the_protection_of_individuals_with_regard_to_automatic_processing_of_personal_data">It dates back to 1981</a>, and <a href="https://en.wikipedia.org/wiki/Data_Privacy_Day">28th January is “Data Potection day”</a>. The essence of the law didn’t change much in the previous iterations. The critical chance was the size of the fines that the EU stipulated may be imposed for infringements. Paul Nemitz, who was closely involved with the drafting, told me that they were initially inspired by competition law, which levies fines of 10% of international revenue. The final implementation is restricted to 5%, but it’s worth pointing out that Facebook’s fine (imposed in the US by the FTC) was $5 billion dollars. Or approximately 7% of their international revenue at the time.</p>
-<p>So the big change is the seriousness with which regulators are taking breaches of the intent of GDPR. And indeed, this newfound will on behalf of the EU led to an amount of panic around companies who rushed to see if they were complying with this strengthened legislation.</p>
-<p>But is it really the big bad regulator coming down hard on the poor scientist or company, just trying to do an honest day’s work? I would argue not. The stipulations of the GDPR include fairly simple things like the ‘right to an explanation’ for consequential decision-making. Or the right to deletion, to remove personal private data from a corporate data ecosystem.</p>
-<p>Guardian article on <a href="https://www.theguardian.com/media-network/2015/mar/05/digital-oligarchy-algorithms-personal-data">Digital Oligarchies</a></p>
-<p>While these are new stipulations, if you reverse the argument and ask a company “would it not be a good thing if you could explain why your automated decision making system is making decision X about customer Y” seems perfectly reasonable. Or “Would it not be a good thing if we knew that we were capable of deleting customer Z’s data from our systems, rather than being concerned that it may be lying unregistered in an S3 bucket somewhere?”</p>
-<p>Phrased in this way, you can see that GDPR perhaps would better stand for “Good Data Practice Rules,” and should really be being adopted by the scientist, the company or whoever in an effort to respect the rights of the people they aim to serve.</p>
-<p>So how do Data Trusts fit into this landscape? Well it’s appropriate that we’ve mentioned the commons, because a current challenge is how we manage data rights within our community. And the situation is rather akin to that which one might have found in a feudal village (in the days before Houndkirk Moor was enclosed).</p>
+<p>There’s been much recent talk about GDPR, much of it implying that
+the recent incarnation is radically different from previous
+incarnations. While the most recent iteration began to be developed in
+2012, but in reality, its origins are much older. <a
+href="https://en.wikipedia.org/wiki/Convention_for_the_protection_of_individuals_with_regard_to_automatic_processing_of_personal_data">It
+dates back to 1981</a>, and <a
+href="https://en.wikipedia.org/wiki/Data_Privacy_Day">28th January is
+“Data Potection day”</a>. The essence of the law didn’t change much in
+the previous iterations. The critical chance was the size of the fines
+that the EU stipulated may be imposed for infringements. Paul Nemitz,
+who was closely involved with the drafting, told me that they were
+initially inspired by competition law, which levies fines of 10% of
+international revenue. The final implementation is restricted to 5%, but
+it’s worth pointing out that Facebook’s fine (imposed in the US by the
+FTC) was $5 billion dollars. Or approximately 7% of their international
+revenue at the time.</p>
+<p>So the big change is the seriousness with which regulators are taking
+breaches of the intent of GDPR. And indeed, this newfound will on behalf
+of the EU led to an amount of panic around companies who rushed to see
+if they were complying with this strengthened legislation.</p>
+<p>But is it really the big bad regulator coming down hard on the poor
+scientist or company, just trying to do an honest day’s work? I would
+argue not. The stipulations of the GDPR include fairly simple things
+like the ‘right to an explanation’ for consequential decision-making. Or
+the right to deletion, to remove personal private data from a corporate
+data ecosystem.</p>
+<p>Guardian article on <a
+href="https://www.theguardian.com/media-network/2015/mar/05/digital-oligarchy-algorithms-personal-data">Digital
+Oligarchies</a></p>
+<p>While these are new stipulations, if you reverse the argument and ask
+a company “would it not be a good thing if you could explain why your
+automated decision making system is making decision X about customer Y”
+seems perfectly reasonable. Or “Would it not be a good thing if we knew
+that we were capable of deleting customer Z’s data from our systems,
+rather than being concerned that it may be lying unregistered in an S3
+bucket somewhere?”.</p>
+<p>Phrased in this way, you can see that GDPR perhaps would better stand
+for “Good Data Practice Rules”, and should really be being adopted by
+the scientist, the company or whoever in an effort to respect the rights
+of the people they aim to serve.</p>
+<p>So how do Data Trusts fit into this landscape? Well it’s appropriate
+that we’ve mentioned the commons, because a current challenge is how we
+manage data rights within our community. And the situation is rather
+akin to that which one might have found in a feudal village (in the days
+before Houndkirk Moor was enclosed).</p>
 <h1 id="how-the-gdpr-may-help">How the GDPR May Help</h1>
 <div class="figure">
 <div id="convention-108-coe-figure" class="figure-frame">
@@ -300,106 +588,232 @@ categories:
 <img class="" src="https://inverseprobability.com/talks/./slides/diagrams//data-science/convention-108-coe.png" width="70%" height="auto" align="center" style="background:none; border:none; box-shadow:none; display:block; margin-left:auto; margin-right:auto;vertical-align:middle">
 </div>
 </div>
-<div id="convention-108-coe-magnify" class="magnify" onclick="magnifyFigure(&#39;convention-108-coe&#39;)">
+<div id="convention-108-coe-magnify" class="magnify"
+onclick="magnifyFigure(&#39;convention-108-coe&#39;)">
 <img class="img-button" src="{{ '/assets/images/Magnify_Large.svg' | relative_url }}" style="width:1.5ex">
 </div>
 <div id="convention-108-coe-caption" class="caption-frame">
-<p>Figure: The convention for the protection of individuals with regard to the processing of personal data was opened for signature on 28th January 1981. It was the first legally binding international instrument in the field of data protection.</p>
+<p>Figure: The convention for the protection of individuals with regard
+to the processing of personal data was opened for signature on 28th
+January 1981. It was the first legally binding international instrument
+in the field of data protection.</p>
 </div>
 </div>
-<p>Early reactions to the General Data Protection Regulation by companies seem to have been fairly wary, but if we view the principles outlined in the GDPR as good practice, rather than regulation, it feels like companies can only improve their internal data ecosystems by conforming to the GDPR. For this reason, I like to think of the initials as standing for “Good Data Practice Rules” rather than General Data Protection Regulation. In particular, the term “data protection” is a misnomer, and indeed the earliest <a href="https://en.wikipedia.org/wiki/Convention_for_the_protection_of_individuals_with_regard_to_automatic_processing_of_personal_data">data protection directive from the EU</a> (from 1981) refers to the protection of <em>individuals</em> with regard to the automatic processing of personal data, which is a much better sense of the term.</p>
-<p>If we think of the legislation as protecting individuals, and we note that it seeks, and instead of viewing it as regulation, we view it as “Wouldn’t it be good if …,” e.g. in respect to the <a href="https://en.wikipedia.org/wiki/Right_to_explanation">“right to an explanation”</a>, we might suggest: “Wouldn’t it be good if we could explain why our automated decision making system made a particular decison.” That seems like good practice for an organization’s automated decision making systems.</p>
-<p>Similarly, with regard to data minimization principles. Retaining the minimum amount of personal data needed to drive decisions could well lead to <em>better</em> decision making as it causes us to become intentional about which data is used rather than the sloppier thinking that “more is better” encourages. Particularly when we consider that to be truly useful data has to be cleaned and maintained.</p>
-<p>If GDPR is truly reflecting the interests of individuals, then it is also reflecting the interests of consumers, patients, users etc, each of whom make use of these systems. For any company that is customer facing, or any service that prides itself on the quality of its delivery to those individuals, “good data practice” should become part of the DNA of the organization.</p>
+<p>Early reactions to the General Data Protection Regulation by
+companies seem to have been fairly wary, but if we view the principles
+outlined in the GDPR as good practice, rather than regulation, it feels
+like companies can only improve their internal data ecosystems by
+conforming to the GDPR. For this reason, I like to think of the initials
+as standing for “Good Data Practice Rules” rather than General Data
+Protection Regulation. In particular, the term “data protection” is a
+misnomer, and indeed the earliest <a
+href="https://en.wikipedia.org/wiki/Convention_for_the_protection_of_individuals_with_regard_to_automatic_processing_of_personal_data">data
+protection directive from the EU</a> (from 1981) refers to the
+protection of <em>individuals</em> with regard to the automatic
+processing of personal data, which is a much better sense of the
+term.</p>
+<p>If we think of the legislation as protecting individuals, and we note
+that it seeks, and instead of viewing it as regulation, we view it as
+“Wouldn’t it be good if …”, e.g. in respect to the <a
+href="https://en.wikipedia.org/wiki/Right_to_explanation">“right to an
+explanation”</a>, we might suggest: “Wouldn’t it be good if we could
+explain why our automated decision making system made a particular
+decison”. That seems like good practice for an organization’s automated
+decision making systems.</p>
+<p>Similarly, with regard to data minimization principles. Retaining the
+minimum amount of personal data needed to drive decisions could well
+lead to <em>better</em> decision making as it causes us to become
+intentional about which data is used rather than the sloppier thinking
+that “more is better” encourages. Particularly when we consider that to
+be truly useful data has to be cleaned and maintained.</p>
+<p>If GDPR is truly reflecting the interests of individuals, then it is
+also reflecting the interests of consumers, patients, users etc, each of
+whom make use of these systems. For any company that is customer facing,
+or any service that prides itself on the quality of its delivery to
+those individuals, “good data practice” should become part of the DNA of
+the organization.</p>
 <h2 id="gdpr-in-practice">GDPR in Practice</h2>
 <div style="text-align:right">
-<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_governance/includes/gdpr-overview.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_governance/includes/gdpr-overview.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_governance/includes/gdpr-overview.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_governance/includes/gdpr-overview.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
 </div>
-<p>Need to understand why you are processing personal data, for example see the ICO’s <a href="https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/lawful-basis-for-processing/">Lawful Basis Guidance</a> and their <a href="https://ico.org.uk/for-organisations/gdpr-resources/lawful-basis-interactive-guidance-tool/">Lawful Basis Guidance Tool</a>.</p>
-<p>For websites, if you are processing personal data you will need a privacy policy to be in place. See the ICO’s <a href="https://ico.org.uk/for-organisations/make-your-own-privacy-notice/">Make your own privacy notice</a> site which also provides a template.</p>
-<p>The GDPR gives us some indications of the aspects we might consider when judging whether or not a decision is “fair.”</p>
-<p>But when considering fairness, it seems that there’s two forms that we might consider.</p>
-<h2 id="p-fairness-and-n-fairness"><span class="math inline">\(p\)</span>-Fairness and <span class="math inline">\(n\)</span>-Fairness</h2>
+<p>Need to understand why you are processing personal data, for example
+see the ICO’s <a
+href="https://ico.org.uk/for-organisations/guide-to-data-protection/guide-to-the-general-data-protection-regulation-gdpr/lawful-basis-for-processing/">Lawful
+Basis Guidance</a> and their <a
+href="https://ico.org.uk/for-organisations/gdpr-resources/lawful-basis-interactive-guidance-tool/">Lawful
+Basis Guidance Tool</a>.</p>
+<p>For websites, if you are processing personal data you will need a
+privacy policy to be in place. See the ICO’s <a
+href="https://ico.org.uk/for-organisations/make-your-own-privacy-notice/">Make
+your own privacy notice</a> site which also provides a template.</p>
+<p>The GDPR gives us some indications of the aspects we might consider
+when judging whether or not a decision is “fair”.</p>
+<p>But when considering fairness, it seems that there’s two forms that
+we might consider.</p>
+<h2 id="p-fairness-and-n-fairness"><span
+class="math inline">\(p\)</span>-Fairness and <span
+class="math inline">\(n\)</span>-Fairness</h2>
 <div style="text-align:right">
-<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_ai/includes/p-n-fairness.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_ai/includes/p-n-fairness.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_ai/includes/p-n-fairness.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_ai/includes/p-n-fairness.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
 </div>
 <div class="figure">
 <div id="n-p-fairness-figure" class="figure-frame">
 <object class data="https://inverseprobability.com/talks/./slides/diagrams//ai/n-p-fairness.svg" width="80%" style=" ">
 </object>
 </div>
-<div id="n-p-fairness-magnify" class="magnify" onclick="magnifyFigure(&#39;n-p-fairness&#39;)">
+<div id="n-p-fairness-magnify" class="magnify"
+onclick="magnifyFigure(&#39;n-p-fairness&#39;)">
 <img class="img-button" src="{{ '/assets/images/Magnify_Large.svg' | relative_url }}" style="width:1.5ex">
 </div>
 <div id="n-p-fairness-caption" class="caption-frame">
-<p>Figure: We seem to have two different aspects to fairness, which in practice can be in tension.</p>
+<p>Figure: We seem to have two different aspects to fairness, which in
+practice can be in tension.</p>
 </div>
 </div>
-<p>We’ve outlined <span class="math inline">\(n\)</span>-fairness and <span class="math inline">\(p\)</span>-fairness. By <span class="math inline">\(n\)</span>-fairness we mean the sort of considerations that are associated with <em>substantive</em> equality of opportunity vs <em>formal</em> equality of opportunity. Formal equality of community is related to <span class="math inline">\(p\)</span>-fairness. This is sometimes called procedural fairness and we might think of it as a <em>performative</em> form of fairness. It’s about clarity of rules, for example as applied in sport. <span class="math inline">\(n\)</span>-Fairness is more nuanced. It’s a reflection of society’s normative judgment about how individuals may have been disadvantaged, e.g. due to their upbringing.</p>
-<p>The important point here is that these forms of fairness are in tension. Good procedural fairness needs to be clear and understandable. It should be clear to everyone what the rules are, they shouldn’t be obscured by jargon or overly subtle concepts. <span class="math inline">\(p\)</span>-Fairness should not be easily undermined by adversaries, it should be difficult to “cheat” good <span class="math inline">\(p\)</span>-fairness. However, <span class="math inline">\(n\)</span>-fairness requires nuance, understanding of the human condition, where we came from and how different individuals in our society have been advantaged or disadvantaged in their upbringing and their access to opportunity.</p>
-<p>Pure <span class="math inline">\(n\)</span>-fairness and pure <span class="math inline">\(p\)</span>-fairness both have the feeling of dystopias. In practice, any decision making system needs to balance the two. The correct point of operation will depend on the context of the decision. Consider fair rules of a game of football, against fair distribution of social benefit. It is unlikely that there is ever an objectively correct balance between the two for any given context. Different individuals will favour <span class="math inline">\(p\)</span> vs <span class="math inline">\(n\)</span> according to their personal values.</p>
-<p>Given the tension between the two forms of fairness, with <span class="math inline">\(p\)</span> fairness requiring simple rules that are understandable by all, and <span class="math inline">\(n\)</span> fairness requiring nuance and subtlety, how do we resolve this tension in practice?</p>
-<p>Normally in human systems, significant decisions involve trained professionals. For example, judges, or accountants or doctors.</p>
-<p>Training a professional involves lifting their “reflexive” response to a situation with “reflective” thinking about the consequences of their decision that rely not just on the professional’s expertise, but also their knowledge of what it is to be a human.</p>
-<p>This <em>marvellous</em> resolution exploits the fact that while humans are increadibly complicated nuanced entities, other humans have an intuitive ability to understand their motivations and values. So the human is a complex entity that seems simple to other humans.</p>
-<h2 id="reflexive-and-reflective-intelligence">Reflexive and Reflective Intelligence</h2>
+<p>We’ve outlined <span class="math inline">\(n\)</span>-fairness and
+<span class="math inline">\(p\)</span>-fairness. By <span
+class="math inline">\(n\)</span>-fairness we mean the sort of
+considerations that are associated with <em>substantive</em> equality of
+opportunity vs <em>formal</em> equality of opportunity. Formal equality
+of community is related to <span
+class="math inline">\(p\)</span>-fairness. This is sometimes called
+procedural fairness and we might think of it as a <em>performative</em>
+form of fairness. It’s about clarity of rules, for example as applied in
+sport. <span class="math inline">\(n\)</span>-Fairness is more nuanced.
+It’s a reflection of society’s normative judgment about how individuals
+may have been disadvantaged, e.g. due to their upbringing.</p>
+<p>The important point here is that these forms of fairness are in
+tension. Good procedural fairness needs to be clear and understandable.
+It should be clear to everyone what the rules are, they shouldn’t be
+obscured by jargon or overly subtle concepts. <span
+class="math inline">\(p\)</span>-Fairness should not be easily
+undermined by adversaries, it should be difficult to “cheat” good <span
+class="math inline">\(p\)</span>-fairness. However, <span
+class="math inline">\(n\)</span>-fairness requires nuance, understanding
+of the human condition, where we came from and how different individuals
+in our society have been advantaged or disadvantaged in their upbringing
+and their access to opportunity.</p>
+<p>Pure <span class="math inline">\(n\)</span>-fairness and pure <span
+class="math inline">\(p\)</span>-fairness both have the feeling of
+dystopias. In practice, any decision making system needs to balance the
+two. The correct point of operation will depend on the context of the
+decision. Consider fair rules of a game of football, against fair
+distribution of social benefit. It is unlikely that there is ever an
+objectively correct balance between the two for any given context.
+Different individuals will favour <span class="math inline">\(p\)</span>
+vs <span class="math inline">\(n\)</span> according to their personal
+values.</p>
+<p>Given the tension between the two forms of fairness, with <span
+class="math inline">\(p\)</span> fairness requiring simple rules that
+are understandable by all, and <span class="math inline">\(n\)</span>
+fairness requiring nuance and subtlety, how do we resolve this tension
+in practice?</p>
+<p>Normally in human systems, significant decisions involve trained
+professionals. For example, judges, or accountants or doctors.</p>
+<p>Training a professional involves lifting their “reflexive” response
+to a situation with “reflective” thinking about the consequences of
+their decision that rely not just on the professional’s expertise, but
+also their knowledge of what it is to be a human.</p>
+<p>This <em>marvellous</em> resolution exploits the fact that while
+humans are increadibly complicated nuanced entities, other humans have
+an intuitive ability to understand their motivations and values. So the
+human is a complex entity that seems simple to other humans.</p>
+<h2 id="reflexive-and-reflective-intelligence">Reflexive and Reflective
+Intelligence</h2>
 <div style="text-align:right">
-<span class="editsection-bracket" style="">[</span><span class="editsection" style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_ai/includes/reflexive-reflective.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_ai/includes/reflexive-reflective.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
+<span class="editsection-bracket" style="">[</span><span
+class="editsection"
+style=""><a href="https://github.com/lawrennd/talks/edit/gh-pages/_ai/includes/reflexive-reflective.md" target="_blank" onclick="ga('send', 'event', 'Edit Page', 'Edit', 'https://github.com/lawrennd/talks/edit/gh-pages/_ai/includes/reflexive-reflective.md', 13);">edit</a></span><span class="editsection-bracket" style="">]</span>
 </div>
-<p>Another distinction I find helpful when thinking about intelligence is the difference between reflexive actions and reflective actions. We are much more aware of our reflections, but most actions we take are reflexive. And this can lead to an underestimate of the importance of our reflexive actions.</p>
-<p><span class="math display">\[\text{reflect} \Longleftrightarrow \text{reflex}\]</span></p>
-<p>It is our reflective capabilities that distinguish us from so many lower forms of intelligence. And it is also in reflective thinking that we can contextualise and justify our actions.</p>
-<p>Reflective actions require longer timescales to deploy, often when we are in the moment it is the reflexive thinking that takes over. Naturally our biases about the world can enter in either our reflective or reflexive thinking, but biases associated with reflexive thinking are likely to be those we are unaware of.</p>
-<p>This interaction between reflexive and reflective, where our reflective-self can place us within a wider cultural context, would seem key to better human decision making. If the reflexive-self can learn from the reflective-self to make better decisions, or if we have mechanisms of doubt that allow our reflective-self to intervene when our reflexive-decisions have consequences, then our reflexive thinking can be “lifted” to better reflect the results of our actions.</p>
-<p><span class="math display">\[\text{reflect} \Longleftrightarrow \text{reflex}\]</span></p>
-<p>Simplistic interpretations of utility theory are misleading about the real decisions we face, and similarly for the machines we design. These simplistic perspctives have also led to a tendency to seek proxies for a notion of “correct” decision making such as consistency. However, in practice uncertainty means that our decisions will often be incorrect. Faced with this incorrectness. Once we accept errors will be made, we can see that making consistent errors is likely to be more harmful than when those errors are inconsistent.</p>
-<h2 id="links">Links</h2>
-<ul>
-<li><a href="http://inverseprobability.com/2017/11/15/decision-making">This paper on decision making and diversity</a></li>
-<li><a href="http://inverseprobability.com/2015/12/04/what-kind-of-ai/">This post on System Zero</a> and <a href="http://inverseprobability.com/2015/11/09/artificial-stupidity/">This post on the Mechanistic Fallacy</a> relate to the ideas in this talk.</li>
-<li><a href="http://inverseprobability.com/2018/02/06/natural-and-artificial-intelligence">This post on natural vs artificial systems</a></li>
-<li>Articles in the Guardian are available from my <a href="http://www.theguardian.com/profile/neil-lawrence">Guardian Profile Page</a></li>
-<li><a href="http://inverseprobability.com/blog.html">My blog</a> has articles relating to this area.</li>
-</ul>
+<p>Another distinction I find helpful when thinking about intelligence
+is the difference between reflexive actions and reflective actions. We
+are much more aware of our reflections, but most actions we take are
+reflexive. And this can lead to an underestimate of the importance of
+our reflexive actions.</p>
+<p><span class="math display">\[\text{reflect} \Longleftrightarrow
+\text{reflex}\]</span></p>
+<p>It is our reflective capabilities that distinguish us from so many
+lower forms of intelligence. And it is also in reflective thinking that
+we can contextualise and justify our actions.</p>
+<p>Reflective actions require longer timescales to deploy, often when we
+are in the moment it is the reflexive thinking that takes over.
+Naturally our biases about the world can enter in either our reflective
+or reflexive thinking, but biases associated with reflexive thinking are
+likely to be those we are unaware of.</p>
+<p>This interaction between reflexive and reflective, where our
+reflective-self can place us within a wider cultural context, would seem
+key to better human decision making. If the reflexive-self can learn
+from the reflective-self to make better decisions, or if we have
+mechanisms of doubt that allow our reflective-self to intervene when our
+reflexive-decisions have consequences, then our reflexive thinking can
+be “lifted” to better reflect the results of our actions.</p>
+<p><span class="math display">\[\text{reflect} \Longleftrightarrow
+\text{reflex}\]</span></p>
+<p>Simplistic interpretations of utility theory are misleading about the
+real decisions we face, and similarly for the machines we design. These
+simplistic perspctives have also led to a tendency to seek proxies for a
+notion of “correct” decision making such as consistency. However, in
+practice uncertainty means that our decisions will often be incorrect.
+Faced with this incorrectness. Once we accept errors will be made, we
+can see that making consistent errors is likely to be more harmful than
+when those errors are inconsistent.</p>
 <h2 id="thanks">Thanks!</h2>
-<p>For more information on these subjects and more you might want to check the following resources.</p>
+<p>For more information on these subjects and more you might want to
+check the following resources.</p>
 <ul>
 <li>twitter: <a href="https://twitter.com/lawrennd">@lawrennd</a></li>
-<li>podcast: <a href="http://thetalkingmachines.com">The Talking Machines</a></li>
-<li>newspaper: <a href="http://www.theguardian.com/profile/neil-lawrence">Guardian Profile Page</a></li>
-<li>blog: <a href="http://inverseprobability.com/blog.html">http://inverseprobability.com</a></li>
+<li>podcast: <a href="http://thetalkingmachines.com">The Talking
+Machines</a></li>
+<li>newspaper: <a
+href="http://www.theguardian.com/profile/neil-lawrence">Guardian Profile
+Page</a></li>
+<li>blog: <a
+href="http://inverseprobability.com/blog.html">http://inverseprobability.com</a></li>
 </ul>
 <h1 class="unnumbered" id="references">References</h1>
-<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="refs" class="references csl-bib-body hanging-indent"
+role="doc-bibliography">
 <div id="ref-Box-science76" class="csl-entry" role="doc-biblioentry">
-Box, G.E.P., 1976. Science and statistics. Journal of the American Statistical Association 71, 791–799.
+Box, G.E.P., 1976. <a href="http://www.jstor.org/stable/2286841">Science
+and statistics</a>. Journal of the American Statistical Association 71,
+791–799.
 </div>
-<div id="ref-Breiman-bagging96" class="csl-entry" role="doc-biblioentry">
-Breiman, L., 1996. Bagging predictors. Machine Learning 24, 123–140. <a href="https://doi.org/10.1007/BF00058655">https://doi.org/10.1007/BF00058655</a>
+<div id="ref-Breiman-bagging96" class="csl-entry"
+role="doc-biblioentry">
+Breiman, L., 1996. Bagging predictors. Machine Learning 24, 123–140. <a
+href="https://doi.org/10.1007/BF00058655">https://doi.org/10.1007/BF00058655</a>
 </div>
-<div id="ref-Delacroix-habitual22" class="csl-entry" role="doc-biblioentry">
-Delacroix, S., 2022. Habitual ethics? Bloombsbury Publishing.
+<div id="ref-Delacroix-habitual22" class="csl-entry"
+role="doc-biblioentry">
+Delacroix, S., 2022. <a
+href="https://library.oapen.org/handle/20.500.12657/58884">Habitual
+ethics?</a> Bloombsbury Publishing.
 </div>
 <div id="ref-Foot-problem67" class="csl-entry" role="doc-biblioentry">
-Foot, P., 1967. The problem of abortion and the doctrine of the double effect in virtues and vices. Oxford Review 5, 5–15. <a href="https://doi.org/10.1093/0199252866.003.0002">https://doi.org/10.1093/0199252866.003.0002</a>
+Foot, P., 1967. The problem of abortion and the doctrine of the double
+effect in virtues and vices. Oxford Review 5, 5–15. <a
+href="https://doi.org/10.1093/0199252866.003.0002">https://doi.org/10.1093/0199252866.003.0002</a>
 </div>
-<div id="ref-Kahneman-fastslow11" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Kahneman-fastslow11" class="csl-entry"
+role="doc-biblioentry">
 Kahneman, D., 2011. Thinking fast and slow.
 </div>
-<div id="ref-Meehl-clinicalstatistical54" class="csl-entry" role="doc-biblioentry">
-Meehl, P.E., 1954. Clinical versus statistical prediction: A theoretical analysis and a review of the evidence.
+<div id="ref-Meehl-clinicalstatistical54" class="csl-entry"
+role="doc-biblioentry">
+Meehl, P.E., 1954. Clinical versus statistical prediction: A theoretical
+analysis and a review of the evidence.
 </div>
 <div id="ref-Sandel-justice10" class="csl-entry" role="doc-biblioentry">
 Sandel, M., 2010. Justice: What’s the right thing to do?
 </div>
-<div id="ref-Thomson-killing76" class="csl-entry" role="doc-biblioentry">
-Thomson, J.J., 1976. Killing, letting die, and the trolley problem. The Monist 204–217.
+<div id="ref-Thomson-killing76" class="csl-entry"
+role="doc-biblioentry">
+Thomson, J.J., 1976. Killing, letting die, and the trolley problem. The
+Monist 204–217.
 </div>
 </div>
-<section class="footnotes" role="doc-endnotes">
-<hr />
-<ol>
-<li id="fn1" role="doc-endnote"><p>This quote was first highlighted to me by Richard D. Wilkinson.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section>
 
