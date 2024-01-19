@@ -13,6 +13,7 @@ talkcss: https://inverseprobability.com/assets/css/talks.css
 bibdir: $HOME/lawrennd/bibliography
 postsdir: ../_lectures/
 slidesdir: ../slides/
+slidesheader: slides-header.html
 notesdir: ../_notes/
 notebooksdir: ../_notebooks/
 practicalsdir: ../_practicals/
