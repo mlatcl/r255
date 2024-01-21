@@ -7,11 +7,10 @@ author:
   orcid: 0000-0001-9258-1030
   url: http://inverseprobability.com
 layout: lecture
-room:
-venue: GN06, William Gates Building
+venue: William Gates Building
 talkcss: https://inverseprobability.com/assets/css/talks.css
 bibdir: $HOME/lawrennd/bibliography
-postsdir: ../_lectures/
+postsdir: ../_topics/
 slidesdir: ../slides/
 slidesheader: slides-header.html
 notesdir: ../_notes/
