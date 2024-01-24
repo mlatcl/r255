@@ -42,10 +42,6 @@ featured_image: slides/diagrams/ai/the-diving-bell-and-the-butterfly.jpg
 
 \notes{We will look at look at different papers related to narratives, philosophies and theories related to artificial intelligence and determine if there are other meaningful ways of identifying problems, themes, and datasets curated based on them.}
 
-\notes{ML Problem: If the AI narratives currently being promoted are seen in some parts of the machine learning community as too speculative or longtermfocused, then how does one extrapolate more near-term problems and themes from them to study within the machine learning community?}
-
-\notes{We will look at look at different papers related to narratives, philosophies and theories related to artificial intelligence and determine if there are other meaningful ways of identifying problems, themes, and datasets curated based on them.}
-
 \notes{The first paper set is:}
 
 \notes{1. [Thousands of AI Authors on the Future of AI](https://arxiv.org/abs/2401.02843#:~:text=In%20the%20largest%20survey%20of,achieving%20several%20milestones%20by%202028%2C) by Katja Grace, Harlan Stewart, Julia Fabienne Sandkühler, Stephen Thomas, Ben Weinstein-Raun, and Jan Brauner.}
