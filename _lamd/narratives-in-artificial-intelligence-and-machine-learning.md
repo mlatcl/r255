@@ -31,9 +31,16 @@ featured_image: slides/diagrams/ai/the-diving-bell-and-the-butterfly.jpg
 
 \notes{\subsection{Overview}}
 
-\notes{In this topic we will explore the relationship between narrative and the development of machine learning and AI solutions. The course will be taught in collaboration with Nichole Ravindran and Alessandro Trevisan.}
+\notes{In this topic we will explore the relationship between narrative and the development of machine learning and AI solutions. The course will be taught in collaboration with Nichole Anderson Ravindran and Alessandro Trevisan.}
 
-\notes{How do machine-learning researchers understand the narratives, philosophies, and theories surrounding the present-day understanding of AGI? How could the Fynesse Framework be employed to find more near-term datasets, themes, and problems to study?}
+\notes{You can find text of Alessandro's introduction to narratives [here](https://mlatcl.github.io/r255/assets/pdf/2024-01-19_alessandro-trevisan_R255-introduction-to-narratives.pdf).} 
+
+\notes{How do machine-learning researchers understand the narratives, philosophies, and theories surrounding the present-day understanding of AGI?}
+
+\notes{Can present-day and near-future concerns, issues, and themes be identified and extrapolated from future-oriented AI narratives?}
+
+
+\notes{We will look at look at different papers related to narratives, philosophies and theories related to artificial intelligence and determine if there are other meaningful ways of identifying problems, themes, and datasets curated based on them.}
 
 \notes{ML Problem: If the AI narratives currently being promoted are seen in some parts of the machine learning community as too speculative or longtermfocused, then how does one extrapolate more near-term problems and themes from them to study within the machine learning community?}
 
@@ -53,7 +60,7 @@ featured_image: slides/diagrams/ai/the-diving-bell-and-the-butterfly.jpg
 6. [Laplace's Demon and the Adventures of His Apprentices](https://www.cambridge.org/core/journals/philosophy-ofscience/article/laplaces-demon-and-the-adventures-of-hisapprentices/5A284E42DC95C284C318AEC0B330063B) (Cambridge Core, Philosophy of Science Journal, Jan. 1, 2022) - Roman Frigg, Seamus Bradley, Hailiang Du and Leonard A Smith
 7. [Studying Computer Scientists](https://direct.mit.edu/books/oamonograph/5093/chapter/3042674/Studying-Computer-Scientists) (Chapter 1 of The Constitution of Algorithms; MIT Press, 2020) - Florian Jaton
 8. [AGI Ruin: A List of Lethalities](https://www.lesswrong.com/posts/uMQ3cqWDPHhjtiesc/agi-ruin-a-listof-lethalities) (2022 MIRI Alignment Discussion; Blogpost, LessWrong, June 5, 2022) - Eliezer Yudkowsky
-9. [Meditations on Moloch](https://slatestarcodex.com/2014/07/30/meditations-on-moloch/) (Reflective Essay written by Scott Alexander on Slate Star Codex, July $30^{\text {th }}$ 2014; This essay was something shared during an Effective Altruism course I took as an expression of potentially understanding advanced AI; This concept is being discussed more recently now.)
+9. [Meditations on Moloch](https://slatestarcodex.com/2014/07/30/meditations-on-moloch/) Meditations on Moloch (Reflective Essay written by Scott Alexander on Slate Star Codex, July 30th, 2014.)
 
 10. [The Artificial Intelligence of the Ethics of Artificial Intelligence - An Introductory Overview for Law and Regulations](https://academic.oup.com/edited-volume/34287/chapter/290654580) (Chapter 1 of The Oxford Handbook of Ethics of AI, 2020) - Edited by Markus D. Dubber, Frank Pasquale, and Sunit Das
 11. [Could a Large Language Model be Conscious?](https://arxiv.org/abs/2303.07103) (arXiv; April 29, 2023)David J. Chalmers
@@ -61,8 +68,27 @@ featured_image: slides/diagrams/ai/the-diving-bell-and-the-butterfly.jpg
 12. [Do Machine-Learning Machines Learn](https://link.springer.com/chapter/10.1007/978-3-319-96448-5_14) (Conference Paper in Philosophy and Theory of Artificial Intelligence 2017; SAPERE Vol. 44; August 29, 2018) - Selmer Bringsjord, Naveen Sundar Govindarajulu, Shreya Banerjee, and John Hummel
 
 13. [AI Risk Skepticism](https://link.springer.com/chapter/10.1007/978-3-031-09153-7_18) (Conference Paper in Philosophy and Theory of Artificial Intelligence 2021; SAPERE Vol. 63; November 15, 2022) - Roman V. Yampolskiy
+
 14. [Toward Out-of-Distribution Generalization Through Inductive Biases](https://link.springer.com/chapter/10.1007/978-3-031-09153-7_5) (Conference Paper in Philosophy and Theory of Artificial Intelligence 2021; SAPERE Vol. 63; November 15, 2022) - Caterina Moruzzi 
+
 15. [The Vulnerability World Hypothesis](https://onlinelibrary.wiley.com/doi/full/10.1111/17585899.12718) (Global Policy Vol. 10; November 2019) - Nick Bostrom}
+
+16. [AI is Like...A Literature Review of AI Metaphors and Why They Matter for Policy](https://www.legalpriorities.org/research/ai-policy-metaphors) (AI Foundations Report#2, Legal Priorities Project, Oct. 2023) - Matthijs M. Maas
+
+
+17. [Introduction - How Chinese Philosophers Think about Artificial Intelligence](https://link.springer.com/chapter/10.1007/978-981-16-2309-7_1) (Introduction of Intelligence and Wisdom - Artificial Intelligence Meets Chinese Philosophers, Edited by Bing Song, Sept. 2021) - Bing Song
+
+
+18. [The Artificial Intelligence Challenge and the End of Humanity](https://link.springer.com/chapter/10.1007/978-981-16-2309-7_3) (3rd Chapter Introduction of Intelligence and Wisdom - Artificial Intelligence Meets Chinese Philosophers, Edited by Bing Song, Sept. 2021) - Chenyang Li
+
+
+19. [The Uncertain Gamble of Infinite Technological Progress](https://link.springer.com/chapter/10.1007/978-981-16-2309-7_10) (10th Chapter of Introduction of Intelligence and Wisdom - Artificial Intelligence Meets Chinese Philosophers, Edited by Bing Song, Sept. 2021) - Tingyang Zhao
+
+
+20. [Artificial Intelligence and African Conceptions of Personhood](https://doi.org/10.1007/s10676-020-09541-3) (Ethics and Information Technology, Vol. 23(2), pgs 127-136, June 2021; originally published June 2020) - C.S. Wareham
+
+
+21. [Decolonial AI - Decolonial Theory as Sociotechnical Foresight in Artificial Intelligence](https://link.springer.com/article/10.1007/s13347-020-00405-8#citeas) (Philosophy & Technology, Vol. 33, pgs 659-684, July 2020) - Shakir Mohamed, Marie-Therese Png, and William Isaac
 
 \notes{The presentation for each paper will be in the form of an 800 word summary that captures the main message of the work and sets it against the context of the wider discussion we will set up in this first session.}
 
