@@ -8,7 +8,9 @@ author:
   url: http://inverseprobability.com
 layout: lecture
 venue: William Gates Building
-talkcss: https://inverseprobability.com/assets/css/talks.css
+talktheme: white
+talkcss: mlatcl.css
+talkfontsize: xs
 bibdir: $HOME/lawrennd/bibliography
 postsdir: ../_topics/
 slidesdir: ../slides/
