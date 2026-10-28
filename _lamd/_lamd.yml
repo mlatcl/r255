@@ -8,18 +8,21 @@ author:
   url: http://inverseprobability.com
 layout: lecture
 venue: William Gates Building
-talkcss: https://inverseprobability.com/assets/css/talks.css
+talktheme: white
+talkcss: mlatcl.css
+talkfontsize: xs
 bibdir: $HOME/lawrennd/bibliography
 postsdir: ../_topics/
-slidesdir: ../slides/
+slidesdir: ../slides/ # Compiled slide HTML. copy_web_diagrams writes published figures into slides/diagrams/ here
 slidesheader: slides-header.html
 notesdir: ../_notes/
 notebooksdir: ../_notebooks/
 practicalsdir: ../_practicals/
 snippetsdir: $HOME/lawrennd/snippets
-writediagramsdir: .
+writediagramsdir: . # Where the build writes newly created diagrams (not the shared library)
 scriptsdir: ./scripts/
-diagramsdir: ./slides/diagrams/
+diagramsdir: $HOME/lawrennd/slides/diagrams/ # Filesystem SOURCE library. copy_web_diagrams reads from here; not a URL
+diagramswebpath: slides/diagrams/ # Published URL path after url+baseurl. HTML \diagramsDir uses this, not diagramsdir
 posts: True
 docx: False
 notespdf: False
